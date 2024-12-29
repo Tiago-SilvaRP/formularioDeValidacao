@@ -1,0 +1,22 @@
+@media(max-width:768px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mensagem{
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .caixa-formulario{
+        max-width: 300px;
+    }
+    
+    .caixa-formulario input,
+    textarea, .btn{
+        max-width: 280px;
+    }
+
+}
