@@ -7,7 +7,7 @@ botaoEnviar.addEventListener("click", () => {
         if (item.value !== "") {
             item.classList.add('verde')
             item.nextElementSibling.style.display = 'none'
-        } else{
+        } else {
             item.classList.remove('verde')
             item.classList.add('vermelho')
             item.nextElementSibling.style.display = 'block'
