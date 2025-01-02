@@ -48,7 +48,9 @@ main{
 .caixa-formulario input{
     height: 35px;
     border: solid 1px;
+    padding: 10px;
 }
+
 textarea::placeholder,
 input::placeholder{
     color: #A8A8A8;
@@ -56,10 +58,13 @@ input::placeholder{
     font-size: 15px;
     padding: 8px 10px;
 }
+
 .caixa-formulario textarea{
     border: solid 1px;
     height: 100px;
+    padding: 10px;
 }
+
 .caixa-formulario input,
 textarea, .btn{
     width: 298px;
