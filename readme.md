@@ -13,3 +13,7 @@ não foi tão fácil, mas fiquei contente com meu progresso em tão pouco tempo.
 E aprendi que o trim() corta os espaços no formulario, com o submit eu envio o formulário,
 mas o evento padrão foi bloqueado por que usei o event.preventDefault() para bloquear o envio do
 fomulário, muito aprendizado nesse projeto.
+
+# Gif apresentando projeto
+
+<img src="./src/images/Animação.gif" alt="Gif demonstrando funcionalismo do formulário">
