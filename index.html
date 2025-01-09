@@ -21,30 +21,32 @@
         <div class="mensagem">
             <h2 class="titulo">FICOU COM DÚVIDA? <br>
                 NOS MANDE UMA MENSAGEM!</h2>
-            <p class="texto">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            <p class="texto">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
+                em menos de 24h.</p>
         </div>
 
-        <ul class="caixa-formulario">
-            <li class="formulario">
-                <input name="inputs" id="nome"  placeholder="Nome completo *">
-                <span class="erro">campo obrigatório</span>
-            </li>
-            <li class="formulario">
-                <input name="inputs"  type="email" placeholder="Email *">
-                <span class="erro">campo obrigatório</span>
-            </li>
-            <li class="formulario">
-                <input name="inputs" type="number" placeholder="Telefone *">
-                <span class="erro">campo obrigatório</span>
-            </li>
-            <li class="formulario">
-                <textarea name="inputs" placeholder="Mensagem *"></textarea>
-                <span class="erro">campo obrigatório</span>
-            </li>
-            <li class="obrigatorio">*campos obrigatórios</li>
-
-            <li><button class="btn" id="botao">Enviar</button></li>
-        </ul>
+        <form class="caixa-formulario" id="formulario">
+            <ul>
+                <li class="formulario">
+                    <input name="inputs" id="nome" placeholder="Nome completo *">
+                    <span class="erro">campo obrigatório</span>
+                </li>
+                <li class="formulario">
+                    <input name="inputs" type="email" placeholder="Email *">
+                    <span class="erro">campo obrigatório</span>
+                </li>
+                <li class="formulario">
+                    <input name="inputs" type="number" placeholder="Telefone *">
+                    <span class="erro">campo obrigatório</span>
+                </li>
+                <li class="formulario">
+                    <textarea name="inputs" placeholder="Mensagem *"></textarea>
+                    <span class="erro">campo obrigatório</span>
+                </li>
+                <li class="obrigatorio">*campos obrigatórios</li>
+            </ul>
+            <button type="submit" class="btn" id="botao">Enviar</button>
+        </form>
     </main>
 
     <script type="text/javascript" src="./src/js/formulario.js"></script>
