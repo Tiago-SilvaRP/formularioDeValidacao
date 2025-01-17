@@ -24,6 +24,8 @@ form.addEventListener("submit", (event) => {
     })
     if (formularioValido && nome) {
         alert(`Parabéns ${nome} seu formulário foi enviado com sucesso!`)
+    } else {
+        alert(`${nome} todos os campos devem ser preenchidos para validação do formulário!`)
     }
 })
 
