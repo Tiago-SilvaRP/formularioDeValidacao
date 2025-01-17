@@ -1,18 +1,29 @@
 const campoPreenchido = document.getElementsByName("inputs")
 const form = document.getElementById('formulario')
 
+
 form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    const nome = campoPreenchido[0].value
+    let formularioValido = false
+    console.log(formularioValido);
+
     campoPreenchido.forEach((item) => {
+        console.log(item[0]);
+
         if (item.value.trim() !== "") {
             item.classList.add('verde')
             item.nextElementSibling.style.display = 'none'
-            event.preventDefault()
+            formularioValido = true
         } else {
             item.classList.remove('verde')
             item.classList.add('vermelho')
             item.nextElementSibling.style.display = 'block'
-            event.preventDefault()
-        } 
+            formularioValido = false
+        }
     })
+    if (formularioValido && nome) {
+        alert(`Parabéns ${nome} seu formulário foi enviado com sucesso!`)
+    }
 })
 
