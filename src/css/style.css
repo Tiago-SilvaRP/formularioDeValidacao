@@ -62,6 +62,7 @@ input::placeholder{
     border: solid 1px;
     height: 100px;
     padding: 10px;
+    resize: none;
 }
 
 .caixa-formulario input,
