@@ -1,11 +1,10 @@
 const campoPreenchido = document.getElementsByName("inputs")
 const form = document.getElementById('formulario')
 
-
 form.addEventListener("submit", (event) => {
     event.preventDefault()
-    
-    const nome = campoPreenchido[0].value
+
+    const nome = campoPreenchido[0].value || "Usuario(a)"
     const email = campoPreenchido[1].value
     const fone = campoPreenchido[2].value
     let formularioValido = true
@@ -15,7 +14,6 @@ form.addEventListener("submit", (event) => {
         if (item.value.trim() !== "") {
             item.classList.add('verde')
             item.nextElementSibling.style.display = 'none'
-            formularioValido = true
         } else {
             item.classList.remove('verde')
             item.classList.add('vermelho')
@@ -28,4 +26,5 @@ form.addEventListener("submit", (event) => {
     } else {
         alert(`${nome} todos os campos devem ser preenchidos para validação do formulário!`)
     }
+
 })

@@ -49,6 +49,7 @@ main{
     height: 35px;
     border: solid 1px;
     padding: 10px;
+
 }
 
 textarea::placeholder,
