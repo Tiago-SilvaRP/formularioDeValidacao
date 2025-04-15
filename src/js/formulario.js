@@ -9,15 +9,15 @@ form.addEventListener("submit", (event) => {
     const fone = campoPreenchido[2].value
     let formularioValido = true
 
-    campoPreenchido.forEach((item) => {
+    campoPreenchido.forEach((campo) => {
 
-        if (item.value.trim() !== "") {
-            item.classList.add('verde')
-            item.nextElementSibling.style.display = 'none'
+        if (campo.value.trim() !== "") {
+            campo.classList.add('verde')
+            campo.nextElementSibling.style.display = 'none'
         } else {
-            item.classList.remove('verde')
-            item.classList.add('vermelho')
-            item.nextElementSibling.style.display = 'block'
+            campo.classList.remove('verde')
+            campo.classList.add('vermelho')
+            campo.nextElementSibling.style.display = 'block'
             formularioValido = false
         }
     })
