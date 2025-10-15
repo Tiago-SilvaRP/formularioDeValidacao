@@ -10,16 +10,12 @@ form.addEventListener("submit", (event) => {
     let formularioValido = true
 
     campoPreenchido.forEach((campo) => {
+        const preenchido = campo.value.trim() !== "";
 
-        if (campo.value.trim() !== "") {
-            campo.classList.add('verde')
-            campo.nextElementSibling.style.display = 'none'
-        } else {
-            campo.classList.remove('verde')
-            campo.classList.add('vermelho')
-            campo.nextElementSibling.style.display = 'block'
-            formularioValido = false
-        }
+        campo.classList.toggle('verde', preenchido);
+        campo.classList.toggle("vermelho", !preenchido);
+        campo.nextElementSibling.style.display = preenchido ? 'none' : 'block';
+        if(!preenchido) formularioValido = false;
     })
     if (formularioValido && nome && email && fone) {
         alert(`Parabéns ${nome} seu formulário foi enviado com sucesso!`)
